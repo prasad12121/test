@@ -47,3 +47,5 @@ class B extends A {
 
 echo B::getSelfName(); // ClassA
 echo B::getStaticName(); // ClassB
+
+echo "hiii";
