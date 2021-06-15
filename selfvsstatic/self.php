@@ -32,7 +32,7 @@ class Bar extends Foo
 (new Bar())->a();*/
 
 class A { // Base Class
-    protected static $name = 'ClassA';
+    protected static $name = 'ClassAcc';
     public static function getSelfName() {
         return self::$name;
     }
