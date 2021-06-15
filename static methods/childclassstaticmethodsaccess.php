@@ -3,19 +3,20 @@ class domain{
 
     public static  function abc()
     {
-        echo "hi prasad";
+      return "hi prasad";
 
     }
 
 }
-class child
+class child extends domain
 {
-    public function msg()
-    {
-        domain::abc();
-    }
-
+    public $websiteName;
+public function __construct()
+{
+    $this->websiteName =  parent::abc();
 }
 
+}
 $a=new child();
-$a->msg();
+echo $a->websiteName;
+
